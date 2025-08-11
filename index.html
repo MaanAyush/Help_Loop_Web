@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Initiative Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* General body and typography styles */
+        :root {
+            --primary-color: #3b82f6; /* A nice blue for buttons */
+            --secondary-color: #ef4444; /* A red for accents or warnings */
+            --text-color: #333;
+            --bg-color: #f8fafc;
+            --card-bg-color: #ffffff;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        /* Header and Logo */
+        header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #e5e7eb;
+            gap: 1rem; /* Space between logo and slogan */
+        }
+
+        .logo {
+            max-width: 250px;
+            height: auto;
+            border-radius: 0;
+            box-shadow: none;
+        }
+        
+        .slogan {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #6b7280; /* A subtle gray color */
+            margin: 0;
+            text-align: center;
+        }
+
+        /* Section for request buttons and QR code */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+            align-items: flex-start;
+        }
+
+        @media (min-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .requests-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .qr-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: var(--card-bg-color);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px var(--shadow-color), 0 4px 6px -4px var(--shadow-color);
+        }
+
+        .qr-code-image {
+            width: 180px;
+            height: 180px;
+            object-fit: contain;
+            margin-bottom: 1rem;
+        }
+
+        .qr-section p {
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
+
+        /* Buttons styles */
+        .action-button {
+            display: block;
+            width: 100%;
+            padding: 1.25rem 2rem;
+            background-color: var(--primary-color);
+            color: white;
+            font-size: 1.125rem;
+            font-weight: 700;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px var(--shadow-color);
+        }
+
+        .action-button:hover {
+            background-color: #2563eb;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px var(--shadow-color);
+        }
+
+        .community-button {
+            background-color: #10b981; /* A nice green */
+        }
+
+        .community-button:hover {
+            background-color: #059669;
+        }
+
+        /* Slogan passage styles */
+        .slogan-passage {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: var(--text-color);
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .slogan-passage strong {
+            color: var(--primary-color);
+        }
+
+        /* Join Community Button */
+        .join-community-section {
+            text-align: center;
+            padding-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section with Logo and Slogan -->
+        <header>
+            <img src="logo.png" alt="Helploop Logo" class="logo">
+            <p class="slogan">From Need to Deed — Together, We Rise.</p>
+        </header>
+
+        <!-- Main Content: Buttons and QR Code -->
+        <main class="main-content">
+            <div class="requests-section">
+                <!-- Buttons for different requirements -->
+                <a href="https://adityagroup.sharepoint.com/:l:/s/dummy/FOFpZ7bTAQhPuE8xfttaC_kBFkFQywU7H9k0jPf-VUszaw?nav=MDk4YTg0YTQtNDZiZC00MTNlLWI1YjYtZGYzZDkyYTUwMTBk" class="action-button">Press to blood requirement</a>
+                <a href="https://adityagroup.sharepoint.com/:l:/s/dummy/FOA5AGMA-yRFrFHIiHvnE3oBWMzS32GHgvQIQOy6Ktf4sA?nav=MDhmOGU4M2YtODI1OC00MGJhLWFhZmEtYzlmODFkMWZjOWNh" class="action-button">Press to book requirement</a>
+                <a href="https://adityagroup.sharepoint.com/:l:/s/dummy/FDOavfncKPRHgPKHj-yogAgBFPD64IzCgUj4DWFGrqkFvQ?nav=MGMyOTNlMDYtZWJhMS00YzlmLTk1ODgtN2ZiOWJjNzk1YTNk" class="action-button">Press to money requirement</a>
+            </div>
+            
+            <div class="qr-section">
+                <img src="qr_code.png" alt="QR Code for Donation" class="qr-code-image">
+                <p>Donate for helping others</p>
+            </div>
+        </main>
+        
+        <!-- Slogan passage -->
+        <p class="slogan-passage">
+            <strong>HELP_LOOP</strong> is your university’s trusted circle of support — where students connect to help and be helped. Whether it’s blood donation, sharing books and materials, volunteering at events, or responding to urgent needs — our system makes it fast, reliable, and automatic.<br><br>
+            Join once. Stay connected. Make a real difference.<br><br>
+            Because at HELP_LOOP, support isn’t delayed — it’s looped.
+        </p>
+
+        <!-- Join Community Button Section -->
+        <section class="join-community-section">
+            <h2 class="section-title">Join Our Community</h2>
+            <a href="https://adityagroup.sharepoint.com/:l:/s/dummy/FB9Ag_3_hodLkR0kUmxXfqUBglglQiTskI4iSsYyG1K3fQ?nav=Mzg3NjJiMDItNGI0MS00OGM0LTg5OGUtMzE5Mzc4MmRlODhm" class="action-button community-button">Press to join the community</a>
+        </section>
+    </div>
+</body>
+</html>
